@@ -35,7 +35,8 @@ pico_enable_stdio_usb(Night-Light 1)
 
 # Add the standard library to the build
 target_link_libraries(Night-Light
-        pico_stdlib)
+        pico_stdlib
+)
 
 # Add the standard include files to the build
 target_include_directories(Night-Light PRIVATE
@@ -46,6 +47,7 @@ target_include_directories(Night-Light PRIVATE
 # Add any user requested libraries
 target_link_libraries(Night-Light 
         pico_cyw43_arch_none
+        hardware_adc
         )
 
 pico_add_extra_outputs(Night-Light)
