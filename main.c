@@ -69,8 +69,6 @@ int main() {
 
         sleep_ms(250);
     }
-		
-
 	
     return 0;
 }
